@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+  </head>
+  <body ng-app="starter" ng-controller="ScanCtrl">
+
+    <ion-pane>
+      	<ion-header-bar align-title="center" class="bar bar-header bar-assertive">
+  			<h1 class="title">Ionic Barcode Check</h1>
+  			<a class="button button-icon icon ion-ios-information-outline" ng-click="popupInfo()"></a>
+		</ion-header-bar>
+		<ion-header-bar align-title="center" class="bar bar-subheader">
+  			<h1 class="title">Controllo timbro digitale</h1>
+		</ion-header-bar>
+      	<ion-content class="content">
+  
+			<button ng-disabled="disabled" class="button button-light button-large button-block icon-left ion-ios-barcode-outline" ng-click="click()">
+				Avvia Scansione
+   			</button>
+
+    		<div class="card resultCard" ng-show="message.length!=0">
+ 				<div class="item item-text-wrap" ng-bind-html="message">
+
+  				</div>
+			</div>
+			
+    		<div style="margin-top: 5px;" ng-show="message.length!=0">
+ 				<button class="button button-light button-large button-block icon-left ion-trash-b" ng-click="clear()">
+					Pulisci Risultato
+      			</button>
+   			</div>
+      	</ion-content>
+      	<ion-footer-bar align-title="center" class="bar bar-footer bar-assertive">
+  			<div class="title">Powered By Iubar</div>
+		</ion-footer-bar>
+    </ion-pane>
+  </body>
+</html>

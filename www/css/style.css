@@ -1,0 +1,45 @@
+/* Empty. Add your own CSS if you like */
+
+.content{
+	/*margin:45px 0;*/
+	padding: 20px;
+}
+
+.resultCard{
+	text-align:center;
+}
+
+.resultCard h4{
+	font-size: 20px;
+}
+
+img{
+	 height: 100px;
+	 width: 100px;
+}
+
+.resultPopup img {
+	 height: 100px;
+	 width: 100px;
+}
+
+
+.resultPopup .popup {
+    min-width: 90% !important;
+    /*height: 250px !important;*/
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.resultPopup .popup-title {
+    color: #AAAAAA;
+    font-weight: bold;
+}
+
+.resultPopup .popup-body {
+    overflow: inherit !important;
+    text-align: center;
+    position: relative;
+    color: black;
+    font-size: 20px;
+}
