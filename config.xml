@@ -5,9 +5,8 @@
 	<description>
 		An Ionic Framework and Cordova project.
 	</description>
-	<author email="hi@ionicframework" href="http://ionicframework.com/">
-		Ionic Framework Team
-	</author>
+	<author email="#" href="#">Enrico Ceccolini</author>
+	<author email="info@iubar.it" href="http://iubar.it/">Andrea Borgogelli Avveduti</author>
 	<content src="index.html" />
 	<access origin="*" />
 	<allow-navigation href="*" />
