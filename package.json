@@ -19,7 +19,8 @@
     "cordova-plugin-whitelist",
     "cordova-plugin-splashscreen",
     "cordova-plugin-barcodeScanner",
-    "cordova-plugin-network-information"
+    "cordova-plugin-network-information",
+    "cordova-plugin-barcodescanner"
   ],
   "cordovaPlatforms": [
     "android"
